@@ -1,11 +1,10 @@
 #include "main.h"
 
 /**
- * _puts - print a string with newline
- * @str: str to print
+ * _puts - prints a str with newline
+ * @str: the str to print
  * Return: void
 */
-
 int _puts(char *str)
 {
 	char *a = str;
@@ -16,12 +15,11 @@ int _puts(char *str)
 }
 
 /**
- * _putchar - writes the char c to stdout
- * @c: The character to print
+ * _putchar - writes the character c to stdout
+ * @c: The char to print
  * Return: On success 1.
- * On error, -1 is returned, and errno is set
+ * On error, -1 is returned, and errno is set appropriately.
 */
-
 int _putchar(int c)
 {
 	static int i;

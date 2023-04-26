@@ -2,21 +2,19 @@
 
 /**
  * _isdigit - checks if char is digit
- * @c: the character to check
+ * @c: the char to check
  * Return: 1 if digit, 0 otherwise
 */
-
 int _isdigit(int c)
 {
 	return (c >= '0' && c <= '9');
 }
 
 /**
- * _strlen - returns length of str
- * @s: str whose length to check
+ * _strlen - returns the length of a str
+ * @s: the string whose length to check
  * Return: int length of str
 */
-
 int _strlen(char *s)
 {
 	int i = 0;
@@ -27,9 +25,9 @@ int _strlen(char *s)
 }
 
 /**
- * print_number - prints n with options
- * @str: the base n as a str
- * @params: the parameter struct
+ * print_number - prints a number with options
+ * @str: the base number as a str
+ * @params: the param struct
  * Return: chars printed
 */
 
@@ -58,9 +56,9 @@ int print_number(char *str, params_t *params)
 }
 
 /**
- * print_number_right_shift - prints a n with options
+ * print_number_right_shift - prints a number with options
  * @str: the base number as a str
- * @params: the parameter struct
+ * @params: the param struct
  * Return: chars printed
 */
 
@@ -100,12 +98,11 @@ int print_number_right_shift(char *str, params_t *params)
 }
 
 /**
- * print_number_left_shift - prints a n
- * @str: the base number as a str
+ * print_number_left_shift - prints a number with options
+ * @str: the base number as a string
  * @params: the param struct
  * Return: chars printed
 */
-
 int print_number_left_shift(char *str, params_t *params)
 {
 	unsigned int n = 0, neg, neg2, i = _strlen(str);
