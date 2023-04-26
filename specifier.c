@@ -87,7 +87,7 @@ int get_flag(char *s, params_t *params)
 			k = params->hashtag_flag = 1;
 			break;
 		case '-':
-			k = params->minus_flags = 1;
+			k = params->minus_flag = 1;
 			break;
 		case '0':
 			k = params->zero_flag = 1;
@@ -133,20 +133,21 @@ int get_modifier(char *s, params_t *params)
  * Return: the returned value new pointer
  */
 
-int *get_width(char *s, params_t *params, va_list ap)
+char *get_width(char *s, params_t *params, va_list ap)
 {
-	int w = 0;
+	int d = 0;
 
 	if (*s == '*')
 	{
-		w = va_arg(ap, int);
+		d = va_arg(ap, int);
 		s++;
 	}
 	else
 	{
 		while (_isdigit(*s))
-			w = w * 10 + (*s++ - '0');
+			d = d * 10 + (*s++ - '0');
 	}
-	params->width = w;
+	params->width = d;
 	return (s);
 }
+
